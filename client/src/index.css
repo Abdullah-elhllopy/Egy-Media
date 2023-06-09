@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+html,
+body,
+#root,
+.app {
+  height: 100vh;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+.scrollable {
+  max-height: 600px; /* set the height of the scrollable area */
+  overflow-y: scroll; /* enable vertical scrolling */
+  -ms-overflow-style: none; /* hide the scrollbar in Edge */
+  scrollbar-width: none; /* hide the scrollbar in Firefox */
+  position: sticky;
+  top: 110px;
+}
+
+/* hide the scrollbar in Chrome and Safari */
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+.new-scrollbar{
+  max-height: 600px; /* set the height of the scrollable area */
+  overflow-y: scroll; /* enable vertical scrolling */
+  -ms-overflow-style: none; /* hide the scrollbar in Edge */
+  scrollbar-width: none; /* hide the scrollbar in Firefox */
+  position: sticky;
+}
+.new-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.image-wrapper {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: block;
+  object-fit:fill;
+  border-radius: 5px;
+}
+
+.custom_scrollbar {
+  scrollbar-width: thin;
+}
+.custom_scrollbar {
+  scrollbar-color: #d3cbca #b2160b;
+}
+
+.custom_scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.custom_scrollbar::-webkit-scrollbar-track {
+  background-color: #141725;
+}
+
+.custom_scrollbar::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
